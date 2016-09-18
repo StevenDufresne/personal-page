@@ -1,0 +1,14 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "My marketing website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steve Dufresne <dufresnesteven@gmail.com> (https://github.com/StevenDufresne)",
+  "license": "ISC",
+  "dependencies": {
+    "fraction-grid": "^1.0.2"
+  }
+}
