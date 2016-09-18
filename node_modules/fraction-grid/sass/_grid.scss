@@ -30,6 +30,8 @@
 
 #{$container-tag}, [#{$container-tag}] { display: block; }
 
+[#{$wrapper-tag}][#{$content-tag}] > *, #{$wrapper-tag} #{$content-tag} > * { width: 100%; }
+
 #{$container-tag} #{$wrapper-tag}, [#{$container-tag}][#{$wrapper-tag}] {
 	padding: 0;
 	margin: 0;
