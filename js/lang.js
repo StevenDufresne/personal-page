@@ -1,8 +1,12 @@
 	var langKey = {
 		en: {
 			job_title: "Product Developer",
+			about: "About",
+			about_sub: "Who am I?",
+			about_content1: "I am a UX developer.",
+			about_content2: "I write professional code using modern frameworks and awesome tooling to build rapidly and provide exceptional user experiences.",
 			timeline : "Timeline",
-			timeline_sub : "The path to greatness",
+			timeline_sub : "How did i get here?",
 			timeline1: "Graduated from Wilfrid Laurier University",
 			timeline1_5: "Major in Communications",
 			timeline2: "Left for Korea to teach English",
@@ -19,13 +23,13 @@
 			timeline8: "Moving back to Korea!",
 			timeline8_5: "Looking for remote work.",
 			products: "Products",
-			products_sub: "List of products I have helped build",
+			products_sub: "What have I helped build?",
 			rebel_content: "With a startup mentality, I guide two teams of 4 in the product development lifecycle. We actively engage our customer during our cycles and implement process to modernise a legacy code base.",
 			rebel_role: "Product Developer",
 			solink_content: "As UX lead, I designed and lead development on the latest product release. I worked with customers and stakeholders to design a friendly and intuitive experience that works seemlessly on all devices.",
 			solink_role: "Lead UX Developer",
 			personal: "Personal",
-			personal_sub: "List of products I have built in my spare time",
+			personal_sub: "What have I done with spare time? ... build.",
 			room_content: "I wanted to build a better way for my landlord and I to communicate. So I built a web app to solve the problem.",
 			room_role: "Founder",
 			come_content: "A friend of mine and I co-authored an android app that allows friends to communicate real-time events.",
@@ -39,7 +43,7 @@
 			done: "Done",
 			here: "I'm here",
 			tags: "Tags",
-			tags_sub: "Keywords that feel good.",
+			tags_sub: "What keywords set me off?",
 			accounts: "Accounts",
 			accounts_sub: "A few different ways you can get a hold of me",
 			tech: "Tech",
@@ -54,6 +58,10 @@
 		},
 		kr: {
 			job_title: "제품 개발자",
+			about: "나에 대해서",
+			about_sub: "나는 누구입니까?",
+			about_content1: "나는 UX 개발자입니다",
+			about_content2: "나는 빠르게 구축하고 뛰어난 사용자 경험을 제공하기 위해 현대적인 프레임 워크와 멋진 도구를 사용하여 전문적인 코드를 작성합니다",
 			timeline : "타임 라인",
 			timeline_sub : "위대함 에 대한 경로",
 			timeline1: "윌 프리드 로리에 대학 졸업",
@@ -106,6 +114,7 @@
 		}
 	}
 
+
 	function bindLanguage(lang, elements) {
 		for(var i = 0; i < elements.length; i++) {
 			var thisItem = $(elements[i])
@@ -129,4 +138,3 @@
 		$(".selected").removeClass("selected");
 		$this.addClass("selected");
 	})
-

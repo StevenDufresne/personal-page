@@ -3,15 +3,16 @@
 	<head>
 		<title>Steve Dufresne</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="node_modules/fraction-grid/src/fraction-grid.min.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="dist/css/fraction-grid.min.css">
+		<link rel="stylesheet" href="dist/css/styles.css">
+		<link rel="stylesheet" href="dist/css/animate.css">	
+
 		<link href="//fonts.googleapis.com/css?family=Muli:300,400|Roboto:300,300i,400" rel="stylesheet">
 		<link href="//cdn.jsdelivr.net/open-iconic/1.1.0/font/css/open-iconic.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/animate.css">	
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	</head>
 	<body>
 		<box class="language">
@@ -29,13 +30,28 @@
 					<unit take="1/1"><h2 class="subtitle" data-lang-key="job_title"></h2></unit>
 				</row>
 				<row>
-					<unit take="1/1"><img class="logo" src="light-bulb.svg"></unit>
+					<unit take="1/1"><img class="logo" src="img/light-bulb.svg"></unit>
 				</row>
 			</box>
 			<box class="arrow-down">
 				<row><span class="oi icon animated infinite bounce" data-glyph="arrow-bottom"></span></row>
 			</box>
 		</header>
+		<section class="content">
+			<box>
+				<row lg-max-stretch="3/4" push-bottom="30" class="heading">
+					<unit take="1/1"><h3 class="title" data-lang-key="about"></h3></unit>
+					<unit take="1/1"><h4 class="subtitle" data-lang-key="about_sub"></h4></unit>
+				</row>
+				<row lg-max-stretch="3/5" class="tile-grid" data-animate-trigger>
+					<unit take="1/1"><p class="main-copy" data-lang-key="about_content1"></p></unit>
+					<unit take="1/1"><p class="main-copy" data-lang-key="about_content2"></p></unit>
+				</row>		
+			</box>
+		</section>
+		<box>
+			<row><span class="oi icon arrow-down" data-glyph="arrow-bottom"></span></row>
+		</box>
 		<section class="content">
 			<box push-bottom="50">
 				<row lg-max-stretch="1/2" push-bottom="30" class="heading">
@@ -123,7 +139,7 @@
 		</box>
 
 
-		<section class="content test">
+		<section class="content">
 			<box>
 				<row lg-max-stretch="3/4" push-bottom="30" class="heading">
 					<unit take="1/1"><h3 class="title" data-lang-key="products"></h3></unit>
@@ -309,9 +325,8 @@
 		<footer>
 			<div>&copy; 2016 - <span data-lang-key="thanks"></span></div>
 		</footer>
-
-		<script src="js/animations.js"></script>
-		<script src="js/lang.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="dist/js/bundle.min.js"></script>
 
 	</body>
 </html>

@@ -11,7 +11,6 @@ var Animator = {
 
 		   });
 		});
-
 	},
 	isInView: function (elem) {
 	    var docViewTop = $(window).scrollTop();
@@ -25,9 +24,4 @@ var Animator = {
 	}
 }
 	
-
 Animator.start();
-
-
-
-	
