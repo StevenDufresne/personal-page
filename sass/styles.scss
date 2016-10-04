@@ -118,9 +118,10 @@ header .arrow-down {
 }
 
 .tile-grid .tile .title .icon {
-	padding-left: 5px;
+	padding-left: 8px;
 	font-size: 0.75rem;
-	color: #ddd;
+    color: #333;
+    vertical-align: middle;
 }
 .tile-grid .tile .content {
 	padding: 20px;
