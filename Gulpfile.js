@@ -24,7 +24,7 @@ gulp.task('jsmin', function() {
     .pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('default', function() {
+gulp.task('default',['styles', 'jsmin'], function() {
     gulp.watch('sass/**/*.scss',['styles']);
  	gulp.watch('js/*.js', ['jsmin']);
 });
